@@ -1,5 +1,5 @@
 resource "aws_wafv2_web_acl" "WafWebAcl" {
-  name  = "jomacsit-ecs-wafv2-web-acl"
+  name  = "henryit-ecs-wafv2-web-acl"
   scope = "REGIONAL"
 
   default_action {
