@@ -10,7 +10,7 @@ module "ecs" {
   public_subnets_ids  = local.public_subnet_ids
   ssl_certificate_arn = data.aws_ssm_parameter.certificate_arn.value
   container_name      = "henrycntit"
-  image               = henrykum23/zomato:latest
+  image               = "henrykum23/zomato:latest" #"891377196647.dkr.ecr.us-east-2.amazonaws.com/henryit"
   app_port            = 80
   app_count           = 2
   container_memory    = 2048
